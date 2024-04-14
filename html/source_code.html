@@ -17,12 +17,22 @@
                 <li><a href="source_code.html">开源代码</a></li>
             </ul>
         </nav>
+        <style>
+            .custom-list ol 
+            {
+                line-height: 1.5; 
+            }
+            .custom-list li 
+            {
+                margin-bottom: 10px; 
+            }
+        </style>
     </header>
 
     <main>
         <section>
             <h2>开源代码</h2>
-            <ol>
+              <ol class="custom-list">
               <li><strong>ABC: System for Sequential Logic Synthesis and
                   Formal Verification</strong>, <a href="https://github.com/berkeley-abc/abc">https://github.com/berkeley-abc/abc/</a>,this system is maintained by Dr. Alan Mishchenko alanmi@berkeley.edu. </li>
               <li><strong>The EPFL Logic Synthesis Libraries</strong>, 
@@ -31,6 +41,12 @@
                 <a href="https://github.com/YosysHQ/yosys">https://github.com/YosysHQ/yosys</a>, this is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains, which is maintained by Claire Wolf.</li>
               <li><strong>Advanced Logic Synthesis and Optimization tool
                   (ALSO)</strong>, <a href="https://gitee.com/zfchu/also">https://gitee.com/zfchu/also/</a>, ALSO is based on the EPFL Logic Synthesis Libraries, the aim is to exploit advanced logic synthesis tools for both modern FPGA and emerging nanotechnologies, maintained by Prof. Zhufei Chu's group in Ningbo University.</li>
+              <li><strong>UNIVR Logic Synthesis Software</strong>, <a
+                      href="https://jackhack96.github.io/logic-synthesis/">https://jackhack96.github.io/logic-synthesis/</a>, The purpose of this site is to host source code, binaries and documentation of software for combinational and sequential logic synthesis. Currently, the following libraries are made available: Espresso, SIS, MVSIS and BALM. 
+                    The software has been updated to make it compliant with
+                    current compilers. More specific information is available
+                  in the pages of each tool. The site is maintained by Matteo
+                  Iervasi and Prof. Tiziano Villa in University of Verona. </li>
             </ol>
         </section>
     </main>
