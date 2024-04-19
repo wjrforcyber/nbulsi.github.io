@@ -6,6 +6,10 @@
     <title>逻辑综合与优化 (Logic Synthesis and Optimization)</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+      p {
+        line-height: 1.5;
+        }
+
       .custom-table 
         {
           border-collapse: separate;
@@ -16,6 +20,9 @@
           border: 1px solid black;
           padding: 8px;
         }
+      .quote {
+        font-weight: bold;
+      }
     </style>
 </head>
 
@@ -46,6 +53,23 @@
         </ol>
         </p>
         </section>
+
+        <h2>课程Hands-on(实操)代码仓库</h2>
+        
+        <blockquote class="quote">
+          <p>纸上得来终觉浅，绝知此事要躬行。</p>
+          <footer>— 宋 陆游</footer>
+        </blockquote>
+        
+        <blockquote class="quote">
+          <p>Talk is cheap, show me the code.</p>
+          <footer>— Linus Torvalds</footer>
+        </blockquote>
+
+          <p>课程非常注重实践，结合现有的开源代码，课程力求为对应的章节开发示例代码，以供实操和改进。
+          <a href="https://gitee.com/zfchu/ls-source">
+            https://gitee.com/zfchu/ls-source</a>
+          </p>
 
         <section>
           <h2>课程教学计划</h2>
@@ -86,7 +110,7 @@
             <tr>
               <td rowspan="5">Part 2：逻辑表示方法及优化</td>
               <td>2-1 逻辑函数的表示方法</td>
-              <td>介绍逻辑函数的多种表示方法并分析其优缺点，包括真值表、表达式、SAT、BDD和DAG等。介绍逻辑网络中Window、Cut、Cone等概念。</td>
+              <td>介绍逻辑函数的多种表示方法并分析其优缺点，包括真值表、表达式、合取范式和SAT求解器、BDD和DAG等。介绍逻辑网络中Window、Cut、Cone等概念。</td>
               <td></td>
             </tr>
             <tr>
@@ -96,7 +120,7 @@
             </tr>
             <tr>
               <td>2-3 多级逻辑综合</td>
-              <td>介绍Rewrite、Resub、Refactor、Balance等逻辑重构方法。</td>
+              <td>介绍Node resynthesis、Rewrite、Resub、Refactor、Balance等逻辑重构方法。</td>
               <td></td>
             </tr>
             <tr>
@@ -111,7 +135,7 @@
             </tr>
             <!-- 第三部分 -->
             <tr>
-              <td rowspan="5">Part 3：工艺映射</td>
+              <td rowspan="6">Part 3：工艺映射</td>
               <td>3-1 工艺库</td>
               <td>介绍工艺库的格式等。</td>
               <td></td>
@@ -132,7 +156,12 @@
               <td></td>
             </tr>
             <tr>
-              <td>3-5 静态时序分析</td>
+              <td>3-5 映射算法在逻辑优化中的应用</td>
+              <td>介绍LUT mapping、SOP balancing等映射算法在逻辑优化中的应用。</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3-6 静态时序分析</td>
               <td>介绍静态时序分析算法等。</td>
               <td></td>
             </tr>
