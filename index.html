@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>逻辑综合与优化 (Logic Synthesis and Optimization)</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>逻辑综合与优化 (Logic Synthesis and Optimization)</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
       p {
         line-height: 1.5;
         }
@@ -24,166 +24,166 @@
         font-weight: bold;
       }
     </style>
-</head>
+    </head>
 
-<body>
-  <header>
-    <h1>逻辑综合与优化 (Logic Synthesis and Optimization)</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">主页</a></li>
-        <li><a href="html/course.html">课程资料</a></li>
-                <li><a href="html/reference_books.html">参考书目</a></li>
-                <li><a href="html/source_code.html">开源代码</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <h1>逻辑综合与优化 (Logic Synthesis and Optimization)</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="html/course.html">课程资料</a></li>
+                    <li><a href="html/reference_books.html">参考书目</a></li>
+                    <li><a href="html/source_code.html">开源代码</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-      <section>
-        <h2>课程目标</h2>    
-        <p>在集成电路设计中，逻辑综合是所设计数字电路的高抽象级描述，经过布尔函数化简、优化后，转换到的逻辑门级别的电路连线网表的过程。通常，逻辑综合的信息来源是硬件描述语言,主要是VHDL和Verilog等，
-        设计人员通常使用硬件描述语言来进行电路的高级抽象（通常是数字电路寄存器传输级的数据、行为）描述数字电路的逻辑功能，从而避免在一开始就研究可能极其复杂的电路连线。本课程主要介绍逻辑综合的数据结构和优化算法，
-        并介绍了几种开源逻辑综合工具，使学生具备从事集成电路设计自动化工具的开发能力。课程附带有示例代码，便于实践。
+        <main>
+            <section>
+                <h2>课程目标</h2>
+                <p>在集成电路设计中，逻辑综合是所设计数字电路的高抽象级描述，经过布尔函数化简、优化后，转换到的逻辑门级别的电路连线网表的过程。通常，逻辑综合的信息来源是硬件描述语言,主要是VHDL和Verilog等，
+                    设计人员通常使用硬件描述语言来进行电路的高级抽象（通常是数字电路寄存器传输级的数据、行为）描述数字电路的逻辑功能，从而避免在一开始就研究可能极其复杂的电路连线。本课程主要介绍逻辑综合的数据结构和优化算法，
+                    并介绍了几种开源逻辑综合工具，使学生具备从事集成电路设计自动化工具的开发能力。课程附带有示例代码，便于实践。
 
-        教学目标为
-        <ol>
-          <li>通过学习逻辑综合与优化所涉及到的布尔代数、逻辑表示方法、优化算法和对开源工具学习，使学生对数字集成电路逻辑综合与优化的发展历史、主要算法、数据结构有全面了解。</li>
-          <li>具备从事集成电路设计自动化(EDA)工具的开发能力，特别是逻辑综合工具。</li>
-        </ol>
-        </p>
-        </section>
+                    教学目标为
+                    <ol>
+                        <li>通过学习逻辑综合与优化所涉及到的布尔代数、逻辑表示方法、优化算法和对开源工具学习，使学生对数字集成电路逻辑综合与优化的发展历史、主要算法、数据结构有全面了解。</li>
+                        <li>具备从事集成电路设计自动化(EDA)工具的开发能力，特别是逻辑综合工具。</li>
+                    </ol>
+                </p>
+            </section>
 
-        <h2>课程Hands-on(实操)代码仓库</h2>
-        
-        <blockquote class="quote">
-          <p>纸上得来终觉浅，绝知此事要躬行。</p>
-          <footer>— 宋 陆游</footer>
-        </blockquote>
-        
-        <blockquote class="quote">
-          <p>知行合一：知之真切笃实处即是行，行之明觉精察处即是知。</p>
-          <footer>— 明 王阳明</footer>
-        </blockquote>
-        
-        <blockquote class="quote">
-          <p>Talk is cheap, show me the code.</p>
-          <footer>— Linus Torvalds</footer>
-        </blockquote>
+            <h2>课程Hands-on(实操)代码仓库</h2>
 
-          <p>课程非常注重实践，结合现有的开源代码，课程力求为对应的章节开发示例代码，以供实操和改进。
-          <a href="https://gitee.com/zfchu/ls-source">
-            https://gitee.com/zfchu/ls-source</a>
-          </p>
+            <blockquote class="quote">
+                <p>纸上得来终觉浅，绝知此事要躬行。</p>
+                <footer>— 宋 陆游</footer>
+            </blockquote>
 
-        <section>
-          <h2>课程教学计划</h2>
-          <table border="1", align="center", class="custom-table">
-            <!-- 第一部分 -->
-            <tr>
-              <td rowspan="6">Part 1：逻辑综合与优化导论</td>
-              <td>授课内容</td>
-              <td>具体内容</td>
-              <td>课件下载</td>
-            </tr>
-            <tr>
-              <td>1-1 数字EDA设计流程</td>
-              <td>介绍数字EDA的发展历史、设计流程、关键步骤等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1-2 数字电路设计语言</td>
-              <td>介绍数字电路的硬件描述语言，文件格式，解析器，Lint工具等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1-3 高层次综合</td>
-              <td>介绍高层次综合流程，调度算法等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1-4 逻辑综合流程及工具</td>
-              <td>介绍逻辑综合详细流程，商用和开源逻辑综合工具等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1-5 逻辑等价性验证</td>
-              <td>介绍逻辑功能软件仿真、硬件仿真、调试和基于形式化方法的等价性验证等。</td>
-              <td></td>
-            </tr>
-            <!-- 第二部分 -->
-            <tr>
-              <td rowspan="6">Part 2：逻辑表示方法及优化</td>
-              <td>2-1 逻辑函数的表示方法</td>
-              <td>介绍逻辑函数的多种表示方法并分析其优缺点，包括真值表、表达式、合取范式和SAT求解器、BDD和DAG等。介绍逻辑网络中Window、Cut、Cone等概念。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2-2 布尔代数</td>
-              <td>介绍初级和高级布尔代数，介绍布尔微分、存在量词、全称量词、逻辑网络修复等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2-3 二级逻辑综合</td>
-              <td>介绍Q-M算法，基于启发式算法的Espresso工具等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2-4 多级逻辑综合</td>
-              <td>介绍Node resynthesis、Rewrite、Resub、Refactor、Balance等逻辑重构方法。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2-5 精确逻辑综合</td>
-              <td>介绍基于SAT的精确逻辑综合及其应用。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2-6 时序电路逻辑综合</td>
-              <td>介绍有限状态机状态分配、重定时(retiming)等。</td>
-              <td></td>
-            </tr>
-            <!-- 第三部分 -->
-            <tr>
-              <td rowspan="6">Part 3：工艺映射</td>
-              <td>3-1 工艺库</td>
-              <td>介绍工艺库的格式等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3-2 延迟模型</td>
-              <td>介绍用于工艺映射的延迟模型。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3-3 FPGA工艺映射</td>
-              <td>介绍面向FPGA查找表的工艺映射算法。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3-4 ASIC工艺映射</td>
-              <td>介绍ASIC工艺映射中的布尔匹配、超门构建等。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3-5 映射算法在逻辑优化中的应用</td>
-              <td>介绍LUT mapping、SOP balancing等映射算法在逻辑优化中的应用。</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3-6 静态时序分析</td>
-              <td>介绍静态时序分析算法等。</td>
-              <td></td>
-            </tr>
-    </table>
+            <blockquote class="quote">
+                <p>知行合一：知之真切笃实处即是行，行之明觉精察处即是知。</p>
+                <footer>— 明 王阳明</footer>
+            </blockquote>
 
-          </section>
-    </main>
+            <blockquote class="quote">
+                <p>Talk is cheap, show me the code.</p>
+                <footer>— Linus Torvalds</footer>
+            </blockquote>
 
-    <footer>
-        <p>Copyright &copy; 2024 Zhufei Chu, Ningbo University</p>
-        <p><img src="png/lab-logo.png" alt="" width="295" height="30"></p>
-    </footer>
-</body>
+            <p>课程非常注重实践，结合现有的开源代码，课程力求为对应的章节开发示例代码，以供实操和改进。
+                <a href="https://gitee.com/zfchu/ls-source">
+                    https://gitee.com/zfchu/ls-source</a>
+            </p>
+
+            <section>
+                <h2>课程教学计划</h2>
+                <table border="1" , align="center" , class="custom-table">
+                    <!-- 第一部分 -->
+                    <tr>
+                        <td rowspan="6">Part 1：逻辑综合与优化导论</td>
+                        <td>授课内容</td>
+                        <td>具体内容</td>
+                        <td>课件下载</td>
+                    </tr>
+                    <tr>
+                        <td>1-1 数字EDA设计流程</td>
+                        <td>介绍数字EDA的发展历史、设计流程、关键步骤等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-2 数字电路设计语言</td>
+                        <td>介绍数字电路的硬件描述语言，文件格式，解析器，Lint工具等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-3 高层次综合</td>
+                        <td>介绍高层次综合流程，调度算法等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-4 逻辑综合流程及工具</td>
+                        <td>介绍逻辑综合详细流程，商用和开源逻辑综合工具等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-5 逻辑等价性验证</td>
+                        <td>介绍逻辑功能软件仿真、硬件仿真、调试和基于形式化方法的等价性验证等。</td>
+                        <td></td>
+                    </tr>
+                    <!-- 第二部分 -->
+                    <tr>
+                        <td rowspan="6">Part 2：逻辑表示方法及优化</td>
+                        <td>2-1 逻辑函数的表示方法</td>
+                        <td>介绍逻辑函数的多种表示方法并分析其优缺点，包括真值表、表达式、合取范式和SAT求解器、BDD和DAG等。介绍逻辑网络中Window、Cut、Cone等概念。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2-2 布尔代数</td>
+                        <td>介绍初级和高级布尔代数，介绍布尔微分、存在量词、全称量词、逻辑网络修复等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2-3 二级逻辑综合</td>
+                        <td>介绍Q-M算法，基于启发式算法的Espresso工具等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2-4 多级逻辑综合</td>
+                        <td>介绍Node
+                            resynthesis、Rewrite、Resub、Refactor、Balance等逻辑重构方法。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2-5 精确逻辑综合</td>
+                        <td>介绍基于SAT的精确逻辑综合及其应用。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2-6 时序电路逻辑综合</td>
+                        <td>介绍有限状态机状态分配、重定时(retiming)等。</td>
+                        <td></td>
+                    </tr>
+                    <!-- 第三部分 -->
+                    <tr>
+                        <td rowspan="6">Part 3：工艺映射</td>
+                        <td>3-1 工艺库</td>
+                        <td>介绍工艺库的格式等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-2 延迟模型</td>
+                        <td>介绍用于工艺映射的延迟模型。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-3 FPGA工艺映射</td>
+                        <td>介绍面向FPGA查找表的工艺映射算法。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-4 ASIC工艺映射</td>
+                        <td>介绍ASIC工艺映射中的布尔匹配、超门构建等。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-5 映射算法在逻辑优化中的应用</td>
+                        <td>介绍LUT mapping、SOP balancing等映射算法在逻辑优化中的应用。</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-6 静态时序分析</td>
+                        <td>介绍静态时序分析算法等。</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2024 Zhufei Chu, Ningbo University</p>
+            <p><img src="png/lab-logo.png" alt width="295" height="30"></p>
+        </footer>
+    </body>
 </html>
-
