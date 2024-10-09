@@ -9,7 +9,7 @@
 python3 -m http.server
 ```
 默认在本地localhost 8000端口，可以修改自定义端口。
-<br/>进入浏览器(http://localhost:8000)进行预览。
+<br/>进入浏览器[本地](http://localhost:8000)进行预览。
 
 ### Reference
 - Reference style使用ACM style，reference的格式参考 [Citation Style and Reference Formats](https://www.acm.org/publications/authors/reference-formatting) 和 [ACM Reference](https://onlinelibrary.london.ac.uk/sites/default/files/files/ACMGuide.pdf)。
